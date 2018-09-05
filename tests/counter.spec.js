@@ -1,8 +1,9 @@
 const assert = require("assert");
+const counter = require("../src/counter");
 
 describe("Testando contador", function() {
   it("contador deve iniciar com valor zero", function() {
-    const counterResult = 0;
-    assert.equal(counterResult, 1);
+    const counterResult = counter.count;
+    assert.equal(counterResult, 0);
   });
 });
