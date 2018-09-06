@@ -2,22 +2,22 @@ const assert = require("assert");
 const counter = require("../src/counter");
 
 describe("Testando contador", function() {
-  before(function() {
+  /*before(function() {
     console.log("before");
   });
 
   after(function() {
     console.log("after");
-  });
+  });*/
 
   beforeEach(function() {
-    console.log("beforeEach");
+    //console.log("beforeEach");
     counter.count = 0;
   });
 
-  afterEach(function() {
+  /*afterEach(function() {
     console.log("afterEach");
-  });
+  });*/
 
   it("contador deve iniciar com valor zero", function() {
     const counterResult = counter.count;
