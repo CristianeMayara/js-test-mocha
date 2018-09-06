@@ -20,4 +20,11 @@ describe("Testando contador", function() {
     const counterResult = counter.count;
     assert.equal(counterResult, -1);
   });
+
+  it("teste de incremento de 10", function() {
+    counter.count = 0;
+    counter.increment(10);
+    const counterResult = counter.count;
+    assert.equal(counterResult, 10);
+  });
 });
