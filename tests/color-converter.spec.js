@@ -21,4 +21,12 @@ describe("Testando conversor de cores", function() {
       assert.equal(colorHex, "#0000ff");
     });
   });
+
+  describe("Conversao de hex para rgb", function() {
+    it("Conversao com #", function() {
+      const colorHex = "#ff0000";
+      const colorRgb = colorConverter.toRgb(colorHex);
+      assert.equal(colorRgb, [255, 0, 0]);
+    });
+  });
 });
