@@ -26,7 +26,7 @@ describe("Testando conversor de cores", function() {
     it("Conversao com #", function() {
       const colorHex = "#ff0000";
       const colorRgb = colorConverter.toRgb(colorHex);
-      assert.equal(colorRgb, [255, 0, 0]);
+      assert.deepEqual(colorRgb, [255, 0, 0]);
     });
   });
 });
