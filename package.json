@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "babel src/colorConverter.js --out-file dist/colorConverter.js",
     "test": "mocha tests/*.spec.js"
   },
   "keywords": [],
   "author": "Cristiane Ferreira <cris.mayara@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "express": "^4.16.3",
     "mocha": "^5.2.0",
     "request": "^2.88.0"
